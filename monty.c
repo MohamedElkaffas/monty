@@ -15,8 +15,7 @@ int main(int argc, char *argv[])
 	unsigned int count = 1;
 	stack_t *stack = NULL;
 
-	global.flag = 1;
-	global.content = NULL;
+	global.flag = 1, global.content = NULL;
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");

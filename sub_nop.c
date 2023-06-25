@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * s_nop - does nothing
+ * s_nop - does nothing (void)
  * @stack: pointer to head/top
  * @line_number: current line number
  * Return: nothing

@@ -6,8 +6,7 @@
  */
 void s_add(stack_t **stack, unsigned int line_number)
 {
-	stack_t *temp1;
-	stack_t *temp2;
+	stack_t *temp1, *temp2;
 	int sum = 0;
 
 	if (*stack && (*stack)->next)
@@ -44,9 +43,7 @@ void s_swap(stack_t **stack, unsigned int line_number)
 	{
 		temp = (*stack)->next;
 		if (temp == NULL)
-		{
 			exit(0);
-		}
 		(*stack)->next = temp->next;
 		(*stack)->prev = temp;
 		temp->next = *stack;

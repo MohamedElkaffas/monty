@@ -13,12 +13,11 @@ void s_mod(stack_t **stack, unsigned int line_number)
 
 	if (*stack && (*stack)->next)
 	{
-		if ((*stack)->next->n == 0)
+		if (!((*stack)->next->n))
 		{
 			fprintf(stderr, "L%u: division by zero\n", line_number);
 			free(global.content);
-			fclose(global.file);
-			free_stack(stack);
+			fclose(global.file), free_stack(stack);
 			exit(EXIT_FAILURE);
 		}
 		mod = temp->next->n % temp->n;

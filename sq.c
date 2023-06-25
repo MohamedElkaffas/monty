@@ -2,7 +2,7 @@
 /**
  * s_queue - sets the format of the data to a queue (FIFO)
  * @stack: head
- * @line_number: current number line
+ * @line_number: num line
  */
 
 void s_queue(stack_t **stack, unsigned int line_number)

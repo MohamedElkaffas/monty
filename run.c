@@ -29,8 +29,7 @@ void (*funct(char *token))(stack_t **stack, unsigned int line_number)
 		{"stack", s_stack},
 		{"queue", s_queue},
 		{NULL, NULL}};
-	int i = 0;
-	int op;
+	int i = 0, op;
 
 	while (i < 19)
 	{
